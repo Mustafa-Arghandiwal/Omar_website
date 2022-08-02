@@ -1,0 +1,141 @@
+body {
+  position: relative;
+  background-image: url(Omar.jpg);
+  background-size: cover;
+}
+body::after {
+  top: 0;
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.73);
+
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text 0.5s ease forwards;
+  animation-delay: 2s;
+}
+#mustaf h1:nth-child(1) {
+  animation-delay: 1s;
+}
+#mustaf h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#mustaf h1:nth-child(3) {
+  animation: ghin 0.5s ease forwards;
+  animation-delay: 3s;
+}
+#mustaf h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: mustada 1s ease;
+  animation-delay: 0.5s;
+}
+#mustaf h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+#mustaf h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+#mustaf h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+#mustaf .button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease all;
+}
+
+@keyframes mustada {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes ghin {
+  100% {
+    color: crimson;
+    font-weight: 500px;
+  }
+}
+.hidden {
+  display: none;
+}
+.middle-finger {
+  font-size: 20rem;
+  text-align: center;
+  animation: middleFingerAppear 10s ease;
+}
+
+@keyframes middleFingerAppear {
+  0% {
+    font-size: 110px;
+  }
+
+  50% {
+    transform: translateY(-50rem);
+  }
+  60% {
+    transform: translateY(-40rem);
+  }
+  70% {
+    transform: translateY(-50rem);
+  }
+  80% {
+    transform: translateY(-40rem);
+  }
+  90% {
+    transform: translateY(-50rem);
+  }
+  92% {
+    transform: translateY(-20rem);
+  }
+  94% {
+    transform: translateY(-50rem);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+a {
+  text-decoration: none;
+  margin-left: 40%;
+}
+
+#kosesh {
+  text-align: center;
+}
